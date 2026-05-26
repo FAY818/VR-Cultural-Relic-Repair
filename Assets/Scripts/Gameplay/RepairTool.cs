@@ -49,11 +49,11 @@ public class RepairTool : MonoBehaviour
         if (Physics.Raycast(ray, out hit, maxRayDistance, muralLayerMask))
         {
             // 检测是否指向壁画
-            MuralAreaDetector areaDetector = hit.collider.GetComponent<MuralAreaDetector>();
-            if (areaDetector != null)
-            {
-                ProcessRepairAction(areaDetector.areaIndex, hit.point);
-            }
+            //MuralAreaDetector areaDetector = hit.collider.GetComponent<MuralAreaDetector>();
+            //if (areaDetector != null)
+            //{
+                //ProcessRepairAction(areaDetector.areaIndex, hit.point);
+            //}
         }
         else
         {
@@ -135,8 +135,8 @@ public class RepairTool : MonoBehaviour
         var rightHand = UnityEngine.InputSystem.XR.XRController.rightHand;
 
         // 判断当前工具被哪只手拿着
-        var triggerButton = UnityEngine.InputSystem.Keyboard.current != null ?
-            UnityEngine.InputSystem.Keyboard.current.anyKey : false;
+        //var triggerButton = UnityEngine.InputSystem.Keyboard.current != null ?
+            //UnityEngine.InputSystem.Keyboard.current.anyKey : false;
 
         // 简化处理：使用XR Interaction Toolkit的选择状态
         return grabInteractable != null && grabInteractable.isSelected;

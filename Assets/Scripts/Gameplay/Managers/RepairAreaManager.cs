@@ -35,7 +35,7 @@ public class RepairAreaManager : MonoBehaviour
     public Material muralMaterial; // 壁画材质
 
     [Header("修复工具")]
-    public RepairTool currentTool = RepairToolType.None;
+    public RepairToolType currentTool = RepairToolType.None;
 
     [Header("事件")]
     public UnityEngine.Events.UnityEvent onAllAreasCompleted; // 全部修复完成事件

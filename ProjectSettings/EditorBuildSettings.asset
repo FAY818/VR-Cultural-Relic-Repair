@@ -8,4 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OpeningScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.PXR.Settings: {fileID: 11400000, guid: 31c24c22957af4805aa226c21e103cd8,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a83de5c12023a42ed96a4b3ade5f0238,
+      type: 2}
