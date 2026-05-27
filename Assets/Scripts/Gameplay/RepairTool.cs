@@ -16,7 +16,7 @@ public class RepairTool : MonoBehaviour
     public float syringeHoldTime = 1.5f;      // 注射器动作：按住时间阈值
     public float paintBrushMoveThreshold = 0.03f; // 画笔动作：移动距离阈值
 
-    private XRGrabInteractable grabInteractable;
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
     private bool isHeld = false;
     private Transform rayOrigin;
     private Vector3 lastPosition;
@@ -25,7 +25,7 @@ public class RepairTool : MonoBehaviour
 
     void Awake()
     {
-        grabInteractable = GetComponent<XRGrabInteractable>();
+        grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
         if (grabInteractable != null)
         {
             grabInteractable.selectEntered.AddListener(OnGrabbed);
